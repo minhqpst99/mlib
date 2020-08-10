@@ -13,7 +13,6 @@
 	display: flex;
 	width: 100%;
 	line-height: 3;
-	overflow: hidden;
 	border-radius: 0;
 	&::after {
 		content: "\25BC";
@@ -31,19 +30,18 @@
 	}
 	.form-select {
 		appearance: none;
-		outline: 0;
-		box-shadow: none;
-		background-image: none;
-	}
-	/* Remove IE arrow */
-	.form-select::-ms-expand {
-		display: none;
-	}
-	.form-select {
 		flex: 1;
 		padding: 0 0.5em;
 		color: $black-3;
 		cursor: pointer;
+		outline: 0;
+		background-image: none;
+		&:focus {
+			@include inputFocus($blue-5,$blue-focus);
+		}
+		&::-ms-expand {
+			display: none;
+		}
 	}
 }
 .form-select,
@@ -63,8 +61,7 @@
 	@include inputFocus($blue-5,$blue-focus);
 	/* FORM SELECT */
 	&.form-select[multiple] {
-		height: 90px;
-		padding: .4rem;
+		padding: .5rem;
 		option { margin: 0 .1rem .38rem .1rem; padding: 2px; }
 		option:last-child { margin: 0 .1rem 0rem .1rem; }
 		&::-webkit-scrollbar {  width: 8px; }
