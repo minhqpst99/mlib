@@ -3,53 +3,18 @@
  * Copyright 2020 The Minh Pham Authors
  * Facebook (https://facebook.com/mqp99)
  */
-// Abstracts
-@import './Abstracts/function';
-@import './Abstracts/variable';
-@import './Abstracts/mixin';
-@import './Abstracts/color';
 // Base
-@import './Base/typography';
-@import './Base/animation';
-@import './Base/base';
+@import './Base/typography',
+		'./Base/animation',
+		'./Base/base';
+// Abstracts
+@import './Abstracts/function',
+		'./Abstracts/variable',
+		'./Abstracts/mixin',
+		'./Abstracts/color';
 // Components
-@import './Components/button';
-@import './Components/input';
+@import './Components/button',
+		'./Components/input';
 // Layout
-@import './Layout/display';
-@import './Layout/flex';
-
-*,
-*:focus,
-*::before,
-*::after {
-	box-sizing: border-box;
-	outline: none;
-}
-html {
-	font-family: sans-serif;
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-	margin: 0;
-	padding: 0;
-	font-size: 1rem;
-	color: $black-1;
-	font-weight: 400;
-	line-height: 1.5;
-	text-align: left;
-	background: #fff;
-	font-family: $font-sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	margin-bottom: .5rem;
-}
-p {
-	margin: .5rem 0;
-}
-.bd-radius {
-	border-radius: .25rem!important;
-}
+@import './Layout/display',
+		'./Layout/flex';
