@@ -75,6 +75,7 @@
 		border: 1px solid $gray-1;
 	    appearance: none;
 	    option { margin: .25rem 0 .34rem 0; }
+	    option:last-child { margin-bottom: 0; }
 		/* &::-webkit-scrollbar {  width: 8px; }
 		&::-webkit-scrollbar-track {  background: $silver-1;  }
 		&::-webkit-scrollbar-thumb {  background: $gray-2;  }
