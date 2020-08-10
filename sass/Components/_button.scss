@@ -66,6 +66,12 @@
 			text-decoration: underline;
 		}
 	}
+	&-lg {
+		padding: 1rem 1.2rem;
+	}
+	&-sm {
+		padding: .4rem .7rem;
+	}
 	&-disabled {
 		pointer-events: none;
 		opacity: .5;
