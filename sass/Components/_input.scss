@@ -1,0 +1,89 @@
+.form-group {
+	margin-bottom: .75rem;
+	label {
+		display: block;
+		width: 100%;
+		color: $black-1;
+		margin-bottom: .5rem;
+	}
+}
+.form-select,
+.form-input {
+	display: block;
+	width: 100%;
+	padding: .75rem;
+	font-weight: 400;
+	border-radius: 0;
+	font-size: .95rem;
+	background-clip: padding-box;
+	height: calc(1.5em + 0.75rem + 6px);
+	color: $black-1;
+	background: $white-1;
+	border: 1px solid $gray-1;
+	transition: $transition-input;
+	@include inputFocus($blue-5,$blue-focus);
+	/* FORM SELECT */
+	&.form-select:not([multiple]) {
+		padding: 0 .5rem;
+	}
+	&.form-select[multiple] {
+		height: 90px;
+		padding: .4rem;
+		option { margin: 0 .1rem .38rem .1rem; padding: 2px; }
+		option:last-child { margin: 0 .1rem 0rem .1rem; }
+		&::-webkit-scrollbar {  width: 8px; }
+		&::-webkit-scrollbar-track {  background: $silver-1;  }
+		&::-webkit-scrollbar-thumb {  background: $gray-2;  }
+		&::-webkit-scrollbar-thumb:hover { background: $gray-3;  }
+	}
+	/* END FORM SELECT */
+	&[readonly] {
+		background: $silver-1;
+	}
+	&-plaintext {
+		border: none;
+		background: none!important;
+	}
+	&.form-lg {
+		padding: 0 .75rem;
+		font-size: 1.2rem;
+		height: calc(1.8em + 0.75rem + 6px);
+	}
+	&.form-sm {
+		padding: 0 .5rem;
+		height: calc(1.5em + 0.5rem + 1px);
+	}
+	&.focus-red {
+		@include inputFocus($red-5,$red-focus);
+	}
+	&.focus-orange-bold {
+		@include inputFocus($orange-bold-5,$orange-bold-focus);
+	}
+	&.focus-orange {
+		@include inputFocus($orange-5,$orange-focus);
+	}
+	&.focus-yellow {
+		@include inputFocus($yellow-6,$yellow-focus);
+	}
+	&.focus-green-bold {
+		@include inputFocus($green-bold-5,$green-bold-focus);
+	}
+	&.focus-green {
+		@include inputFocus($green-5,$green-focus);
+	}
+	&.focus-blue-bold {
+		@include inputFocus($blue-bold-5,$blue-bold-focus);
+	}
+	&.focus-blue {
+		@include inputFocus($blue-5,$blue-focus);
+	}
+	&.focus-purple {
+		@include inputFocus($purple-5,$purple-focus);
+	}
+	&.focus-black {
+		@include inputFocus($black-1,$black-focus);
+	}
+	&.focus-gray {
+		@include inputFocus($gray-2,$gray-focus);
+	}
+}
