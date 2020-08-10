@@ -72,7 +72,7 @@
 		@include inputFocus($red-5,$red-focus);
 	}
 	&.focus-orange-bold {
-		@include inputFocus($orange-bold-5,$orange-bold-focus);
+		@include inputFocus($orange-bold-5,#ff572259);
 	}
 	&.focus-orange {
 		@include inputFocus($orange-5,$orange-focus);
