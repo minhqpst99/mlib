@@ -39,6 +39,7 @@
 	/* END FORM SELECT */
 	&[readonly] {
 		background: $silver-1;
+		background-clip: padding-box;
 	}
 	&-plaintext {
 		border: none;
