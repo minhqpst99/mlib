@@ -15,10 +15,10 @@
 	font-weight: 400;
 	border-radius: 0;
 	font-size: .95rem;
-	background-clip: padding-box;
 	height: calc(1.5em + 0.75rem + 6px);
 	color: $black-1;
 	background: $white-1;
+	background-clip: padding-box;
 	border: 1px solid $gray-1;
 	transition: $transition-input;
 	@include inputFocus($blue-5,$blue-focus);
