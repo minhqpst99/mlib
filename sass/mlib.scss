@@ -3,15 +3,15 @@
  * Copyright 2020 The Minh Pham Authors
  * Facebook (https://facebook.com/mqp99)
  */
-// Base
-@import './Base/typography',
-		'./Base/animation',
-		'./Base/base';
 // Abstracts
 @import './Abstracts/function',
 		'./Abstracts/variable',
 		'./Abstracts/mixin',
 		'./Abstracts/color';
+// Base
+@import './Base/typography',
+		'./Base/animation',
+		'./Base/base';
 // Components
 @import './Components/button',
 		'./Components/input';
