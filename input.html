@@ -16,6 +16,18 @@
 		code {
 			color: red;
 		}
+		.code {
+			white-space: nowrap;
+			overflow-x: auto;
+		}
+		.code::-webkit-scrollbar {  height: 8px; display: none; }
+		.code::-webkit-scrollbar-track {  background: #ccc;  }
+		.code::-webkit-scrollbar-thumb {  background: #888;  }
+		.code::-webkit-scrollbar-thumb:hover { background: #555;  }
+		.codeShow:focus .code::-webkit-scrollbar,
+		.codeShow:hover .code::-webkit-scrollbar {
+			display: block;
+		}
 		.codeShow {
 			color: #ddd;
 			padding: 5px;
@@ -62,14 +74,16 @@
 				</select>
 			</div>
 		</div>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;label</i>&nbsp;<i class="ma">for=</i><i class="ms">"exFormSelect"</i><i class="mt">&gt;</i>Example select<i class="mt">&lt;/label&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;select</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-select"</i>&nbsp;<i class="ma">id=</i><i class="ms">"exFormSelect"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 1<i class="mt">&lt;/option&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 2<i class="mt">&lt;/option&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 3<i class="mt">&lt;/option&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;/select&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i>
+		<div class="code">
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;label</i>&nbsp;<i class="ma">for=</i><i class="ms">"exFormSelect"</i><i class="mt">&gt;</i>Example select<i class="mt">&lt;/label&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;select</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-select"</i>&nbsp;<i class="ma">id=</i><i class="ms">"exFormSelect"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 1<i class="mt">&lt;/option&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 2<i class="mt">&lt;/option&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 3<i class="mt">&lt;/option&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;/select&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i>
+		</div>
 	</div>
 	<h3>Select multiple form</h3>
 	<p>
@@ -91,14 +105,15 @@
 				</select>
 			</div>
 		</div>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;label</i>&nbsp;<i class="ma">for=</i><i class="ms">"exFormSelectMultiple"</i><i class="mt">&gt;</i>Example multiple select<i class="mt">&lt;/label&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;select</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-select"</i>&nbsp;<i class="ma">id=</i><i class="ms">"exFormSelectMultiple"</i>&nbsp;<i class="ma">multiple</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 1<i class="mt">&lt;/option&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 2<i class="mt">&lt;/option&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 3<i class="mt">&lt;/option&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;/select&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;label</i>&nbsp;<i class="ma">for=</i><i class="ms">"exFormSelectMultiple"</i><i class="mt">&gt;</i>Example multiple select<i class="mt">&lt;/label&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;select</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-select"</i>&nbsp;<i class="ma">id=</i><i class="ms">"exFormSelectMultiple"</i>&nbsp;<i class="ma">multiple</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 1<i class="mt">&lt;/option&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 2<i class="mt">&lt;/option&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;option</i><i class="mt">&gt;</i>Example 3<i class="mt">&lt;/option&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;/select&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i>
+		</div>
 	</div>
 	<h3>Read only form</h3>
 	<p>
@@ -115,12 +130,14 @@
 				<input type="text" class="form-input form-input-plaintext" placeholder="Read only plaintext (default)" readonly>
 			</div>
 		</div>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">"Read only input (default)"</i>&nbsp;<i class="ma">readonly /&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input form-input-plaintext"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">"Read only input (default)"</i>&nbsp;<i class="ma">readonly /&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i>
+		<div class="code">
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">"Read only input (default)"</i>&nbsp;<i class="ma">readonly /&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input form-input-plaintext"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">"Read only input (default)"</i>&nbsp;<i class="ma">readonly /&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i>
+		</div>
 	</div>
 	<!-- <div class="form-group">
 		<label for="exFormFile">Example file input</label>
@@ -144,15 +161,17 @@
 				<input type="text" class="form-input form-sm" placeholder=".form-sm">
 			</div>
 		</div>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input form-lg"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-lg"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input (default input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input form-sm"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-sm"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
+		<div class="code">
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input form-lg"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-lg"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input (default input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input form-sm"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-sm"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+		</div>
 	</div>
 	<h3>INPUT</h3>
 	<p>
@@ -199,42 +218,44 @@
 				<input type="text" class="form-input focus-gray" placeholder=".form-input .focus-gray (custom focus)">
 			</div>
 		</div>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input (default input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-red"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-red (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-orange-bold"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-orange-bold (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-orange"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-orange (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-yellow"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-yellow (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-green-bold"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-green-bold (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-green"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-green (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-blue-bold"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-blue-bold (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-blue"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-blue (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-purple"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-purple (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-black"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-black (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
-		<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-gray"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-gray (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
-		<i class="mt">&lt;/div&gt;</i><br>
+		<div class="code">
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input (default input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-red"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-red (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-orange-bold"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-orange-bold (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-orange"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-orange (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-yellow"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-yellow (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-green-bold"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-green-bold (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-green"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-green (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-blue-bold"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-blue-bold (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-blue"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-blue (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-purple"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-purple (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-black"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-black (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+			<i class="mt">&lt;div</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-group"</i><i class="mt">&gt;</i><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="mt">&lt;input</i>&nbsp;<i class="ma">type=</i><i class="ms">"text"</i>&nbsp;<i class="ma">class=</i><i class="ms">"form-input focus-gray"</i>&nbsp;<i class="ma">placeholder=</i><i class="ms">".form-input .focus-gray (custom input)"</i>&nbsp;<i class="ma">/&gt;</i><br>
+			<i class="mt">&lt;/div&gt;</i><br>
+		</div>
 	</div>
 		
 </form>
