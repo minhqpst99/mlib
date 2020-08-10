@@ -7,6 +7,49 @@
 		margin-bottom: .5rem;
 	}
 }
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+	&::after {
+	  content: '\25BC';
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  padding: 0 1em;
+	  cursor: pointer;
+	  color: $black-2;
+	  border: 1px solid $gray-1;
+	  pointer-events: none;
+	  transition: .25s all ease;
+	}
+	&:hover::after {
+	  color: $black-5;
+	}
+	.form-select {
+	  appearance: none;
+	  outline: 0;
+	  box-shadow: none;
+	  background-image: none;
+	}
+	/* Remove IE arrow */
+	.form-select::-ms-expand {
+	  display: none;
+	}
+	.form-select {
+	  flex: 1;
+	  padding: 0 .5em;
+	  color: $black-3;
+	  cursor: pointer;
+	}
+}
+/* Arrow */
+/* Transition */
 .form-select,
 .form-input {
 	display: block;
